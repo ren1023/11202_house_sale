@@ -176,14 +176,15 @@
         <span class="p-5">瀏覽總人數 <?= $Total->find(1)['total']; ?></span>
       </div>
 
-
+       <a href="./front/login.php" class="get-started-btn ">管理登入</a>
     </div>
   </nav><!-- End 導覽列 Header/Navbar -->
 
-  <!-- ======= 輪播圖區 Intro Section ======= -->
+      
+  <!-- ======= 輪播圖區 Intro Section  ======= -->
+  <!-- 替代校園映像檔 -->
   <div class="intro intro-carousel swiper position-relative">
     <div class="swiper-wrapper">
-      <!-- 替代校園映像檔 -->
       <?php
       $imgs = $Image->all(['sh' => 1]);
       foreach ($imgs as $img) {
@@ -210,7 +211,8 @@
       }
       ?>
     </div>
-  <div class="swiper-pagination"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
   <main id="main">
 

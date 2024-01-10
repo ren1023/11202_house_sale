@@ -453,6 +453,7 @@ a:hover {
 
 .nav-arrow-b .owl-arrow .owl-nav .owl-prev:hover,
 .nav-arrow-b .owl-arrow .owl-nav .owl-next:hover {
+  /* background-color: #26a356; */
   background-color: #26a356;
 }
 
@@ -579,7 +580,8 @@ a:hover {
 }
 
 .btn.btn-b-n:hover {
-  background-color: #26a356;
+  /* background-color: #3ac162; */
+  background-color: #DBB869;
   color: #ffffff;
 }
 
@@ -780,6 +782,26 @@ a:hover {
   visibility: visible;
   opacity: 1;
   filter: alpha(opacity=1);
+}
+
+/*------/ admin login button /------*/
+.get-started-btn {
+  margin-left: 22px;
+  background: #846157;
+  color: #fff;
+  border-radius: 50px;
+  padding: 8px 25px;
+  white-space: nowrap;
+  transition: 0.3s;
+  font-size: 14px;
+  /* display: inline-block; */
+  float: right;
+}
+
+.get-started-btn:hover {
+  /* background: #3ac162; */
+  background: #DBB869;
+  color: #fff;
 }
 
 /*------/ Hamburger Navbar /------*/

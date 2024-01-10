@@ -4,9 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> 管理登入會員登入 </title>
-	<link rel="stylesheet" href="../assets/css/bootstrap.css">
-	<script src="../assets/js/bootstrap.js"></script>
+	<title> 管理員登入 </title>
+	<link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.css">
+	<script src="../assets/vendor/bootstrap/js/bootstrap.js"></script>
 </head>
 
 <body>
@@ -16,8 +16,8 @@
 				<div class="col col-xl-10">
 					<div class="card" style="border-radius: 1rem;">
 						<div class="row g-0">
-							<div class="col-md-6 col-lg-5 d-none d-md-block">
-								<img src="../img/img1.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+							<div class="col-md-6 col-lg-5 d-none d-md-block m-auto">
+								<img src="../img/admin-login.jpg" alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
 							</div>
 							<div class="col-md-6 col-lg-7 d-flex align-items-center">
 								<div class="card-body p-4 p-lg-5 text-black">
