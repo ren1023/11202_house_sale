@@ -173,7 +173,7 @@
       </button>
 
       <div>
-      <span>瀏覽總人數 <?= $Total->find(1)['total']; ?></span>
+      <span class="p-5">瀏覽總人數 <?= $Total->find(1)['total']; ?></span>
       </div>
 
     </div>
