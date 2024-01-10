@@ -1,3 +1,8 @@
+<?php include_once "./api/db.php";
+if (!isset($_SESSION['login'])) {  //如果你沒有登入，就會回到首頁
+  to("index.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +10,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Dashboard - NiceAdmin Bootstrap Template</title>
+  <title>泰山好宅網後台管理系統</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,14 +33,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/back.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Updated: Nov 17 2023 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
@@ -44,9 +41,9 @@
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="index.php" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">NiceAdmin</span>
+        <span class="d-none d-lg-block" style="color:#846157;">好宅後台管理</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -275,9 +272,9 @@
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link " href="index.html">
+        <a class="nav-link " href="index.php">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>回首頁</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
@@ -520,7 +517,15 @@
 
     <section class="section dashboard">
       <div>
-        my test
+        <?php
+        $do = $_GET['do'] ?? 'title';
+        $file = "./back/{$do}.php";
+        if (file_exists($file)) {
+          include $file;
+        } else {
+          include "./back/title.php";
+        }
+        ?>
       </div>
     </section>
 

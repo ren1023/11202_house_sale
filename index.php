@@ -1,3 +1,4 @@
+<?php include_once "./api/db.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Taishan House Sell</title>
+  <title>How House</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -24,12 +25,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: EstateAgency
-  * Updated: Sep 18 2023 with Bootstrap v5.3.2
-  ======================================================== -->
-
 </head>
 
 <body>
@@ -136,7 +131,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.php">泰山<span class="color-b">好宅網</span></a>
+      <a class="navbar-brand text-brand" href="index.php">好宅<span class="color-b">網</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -171,10 +166,15 @@
           </li>
         </ul>
       </div>
+     
 
       <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
         <i class="bi bi-search"></i>
       </button>
+
+      <div>
+      <span>瀏覽總人數 <?= $Total->find(1)['total']; ?></span>
+      </div>
 
     </div>
   </nav><!-- End 導覽列 Header/Navbar -->
@@ -977,7 +977,7 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">泰山好宅網</h3>
+              <h3 class="w-title-a text-brand">好宅網</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">

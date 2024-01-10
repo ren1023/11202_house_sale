@@ -3,7 +3,7 @@ date_default_timezone_set("Asia/Taipei");
 session_start();
 class DB
 {
-    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=bs5";
+    protected $dsn = "mysql:host=localhost;charset=utf8;dbname=house";
     //protected $dsn = "mysql:host=localhost;charset=utf8;dbname=bquiz";
     protected $pdo;
     protected $table;
@@ -129,17 +129,19 @@ function to($url)
 {
     header("location:$url");
 }
-$Title = new DB('titles');
-$Total = new DB('total');
-$Ad = new DB('ad');
+$Title = new DB('house_titles');
+$Total = new DB('house_total');
+$Ad = new DB('house_ad');
 
-$Bottom = new DB('bottom');
-$Mvim = new DB('mvim');
-$Image = new DB('image');
-$News = new DB('news');
-$Admin = new DB('admin');
-$Menu = new DB('menu');
+$Bottom = new DB('house_bottom');
+$Mvim = new DB('house_mvim');
+$Image = new DB('house_image');
+$News = new DB('house_news');
+$Admin = new DB('house_admin');
+$Menu = new DB('house_menu');
 
+$rows=$Total->find(1)['total'];
+dd($rows);
 
 //可行的方法一
 if(isset($_GET['do'])){ //若 $_GET['do]有存在
@@ -169,7 +171,7 @@ if (isset($_GET['do'])) {
 
 // 記錄進站人數
 if(!isset($_SESSION['visited'])) {//設定有進站的狀態，當visited不存在時
-    $Total->q("update `total` set `total`=`total`+1 where `id`=1");
+    $Total->q("update `house_total` set `total`=`total`+1 where `id`=1");
     $_SESSION['visited']=1;
 }
 ?>
