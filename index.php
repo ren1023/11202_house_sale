@@ -136,38 +136,38 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.html">泰山<span class="color-b">好宅網</span></a>
+      <a class="navbar-brand text-brand" href="index.php">泰山<span class="color-b">好宅網</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
 
           <li class="nav-item">
-            <a class="nav-link active" href="index.html">首頁</a>
+            <a class="nav-link active" href="index.php">首頁</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="about.html">關於我們</a>
+            <a class="nav-link " href="about.php">關於我們</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="property-grid.html">好宅區</a>
+            <a class="nav-link " href="property-grid.php">好宅區</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="blog-grid.html">部落格</a>
+            <a class="nav-link " href="blog-grid.php">部落格</a>
           </li>
 
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
             <div class="dropdown-menu">
-              <a class="dropdown-item " href="property-single.html">Property Single</a>
-              <a class="dropdown-item " href="blog-single.html">Blog Single</a>
-              <a class="dropdown-item " href="agents-grid.html">Agents Grid</a>
-              <a class="dropdown-item " href="agent-single.html">Agent Single</a>
+              <a class="dropdown-item " href="property-single.php">Property Single</a>
+              <a class="dropdown-item " href="blog-single.php">Blog Single</a>
+              <a class="dropdown-item " href="agents-grid.php">Agents Grid</a>
+              <a class="dropdown-item " href="agent-single.php">Agent Single</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link " href="contact.html">聯絡我們</a>
+            <a class="nav-link " href="contact.php">聯絡我們</a>
           </li>
         </ul>
       </div>
@@ -366,7 +366,7 @@
                 <h2 class="title-a">最新樓盤</h2>
               </div>
               <div class="title-link">
-                <a href="property-grid.html">All Property
+                <a href="property-grid.php">All Property
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -386,7 +386,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">206 Mount
+                        <a href="property-single.php">206 Mount
                           <br /> Olive Road Two</a>
                       </h2>
                     </div>
@@ -434,7 +434,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">157 West
+                        <a href="property-single.php">157 West
                           <br /> Central Park</a>
                       </h2>
                     </div>
@@ -442,7 +442,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">rent | $ 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single.php" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -482,7 +482,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">245 Azabu
+                        <a href="property-single.php">245 Azabu
                           <br /> Nishi Park let</a>
                       </h2>
                     </div>
@@ -490,7 +490,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">rent | $ 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single.php" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -530,7 +530,7 @@
                   <div class="card-overlay-a-content">
                     <div class="card-header-a">
                       <h2 class="card-title-a">
-                        <a href="property-single.html">204 Montal
+                        <a href="property-single.php">204 Montal
                           <br /> South Bela Two</a>
                       </h2>
                     </div>
@@ -538,7 +538,7 @@
                       <div class="price-box d-flex">
                         <span class="price-a">rent | $ 12.000</span>
                       </div>
-                      <a href="property-single.html" class="link-a">Click here to view
+                      <a href="property-single.php" class="link-a">Click here to view
                         <span class="bi bi-chevron-right"></span>
                       </a>
                     </div>
@@ -585,7 +585,7 @@
                 <h2 class="title-a">超級業務員</h2>
               </div>
               <div class="title-link">
-                <a href="agents-grid.html">All Agents
+                <a href="agents-grid.php">All Agents
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -602,7 +602,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Margaret Sotillo
+                      <a href="agent-single.php" class="link-two">Margaret Sotillo
                         <br> Escala</a>
                     </h3>
                   </div>
@@ -658,7 +658,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Stiven Spilver
+                      <a href="agent-single.php" class="link-two">Stiven Spilver
                         <br> Darw</a>
                     </h3>
                   </div>
@@ -714,7 +714,7 @@
                 <div class="card-header-d">
                   <div class="card-title-d align-self-center">
                     <h3 class="title-d">
-                      <a href="agent-single.html" class="link-two">Emma Toledo
+                      <a href="agent-single.php" class="link-two">Emma Toledo
                         <br> Cascada</a>
                     </h3>
                   </div>
@@ -775,7 +775,7 @@
                 <h2 class="title-a">最新消息</h2>
               </div>
               <div class="title-link">
-                <a href="blog-grid.html">All News
+                <a href="blog-grid.php">All News
                   <span class="bi bi-chevron-right"></span>
                 </a>
               </div>
@@ -798,7 +798,7 @@
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">House is comming
+                        <a href="blog-single.php">House is comming
                           <br> new</a>
                       </h2>
                     </div>
@@ -822,7 +822,7 @@
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">Travel is comming
+                        <a href="blog-single.php">Travel is comming
                           <br> new</a>
                       </h2>
                     </div>
@@ -846,7 +846,7 @@
                     </div>
                     <div class="card-title-b">
                       <h2 class="title-2">
-                        <a href="blog-single.html">Park is comming
+                        <a href="blog-single.php">Park is comming
                           <br> new</a>
                       </h2>
                     </div>
