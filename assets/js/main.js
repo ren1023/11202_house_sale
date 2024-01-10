@@ -103,10 +103,10 @@
    * Intro Carousel
    */
   new Swiper('.intro-carousel', {
-    speed: 600,
+    speed: 1200,
     loop: true,
     autoplay: {
-      delay: 2000,
+      delay: 3000,
       disableOnInteraction: false
     },
     slidesPerView: 'auto',

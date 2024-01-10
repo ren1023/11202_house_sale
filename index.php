@@ -34,7 +34,7 @@
   <!--/ Form Search Star /-->
   <div class="box-collapse">
     <div class="title-box-d">
-      <h3 class="title-d">Search Property</h3>
+      <h3 class="title-d">找宅</h3>
     </div>
     <span class="close-box-collapse right-boxed bi bi-x"></span>
     <div class="box-collapse-wrap form">
@@ -131,7 +131,7 @@
         <span></span>
         <span></span>
       </button>
-      <a class="navbar-brand text-brand" href="index.php">好宅<span class="color-b">網</span></a>
+      <a class="navbar-brand text-brand" href="index.php">豪屋<span class="color-b">網</span></a>
 
       <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
         <ul class="navbar-nav">
@@ -145,7 +145,7 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link " href="property-grid.php">好宅區</a>
+            <a class="nav-link " href="property-grid.php">豪屋區</a>
           </li>
 
           <li class="nav-item">
@@ -166,104 +166,51 @@
           </li>
         </ul>
       </div>
-     
+
 
       <button type="button" class="btn btn-b-n navbar-toggle-box navbar-toggle-box-collapse" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01">
         <i class="bi bi-search"></i>
       </button>
 
       <div>
-      <span class="p-5">瀏覽總人數 <?= $Total->find(1)['total']; ?></span>
+        <span class="p-5">瀏覽總人數 <?= $Total->find(1)['total']; ?></span>
       </div>
+
 
     </div>
   </nav><!-- End 導覽列 Header/Navbar -->
 
   <!-- ======= 輪播圖區 Intro Section ======= -->
   <div class="intro intro-carousel swiper position-relative">
-
     <div class="swiper-wrapper">
+      <!-- 替代校園映像檔 -->
+      <?php
+      $imgs = $Image->all(['sh' => 1]);
+      foreach ($imgs as $img) {
+        // 組合圖片的完整路徑
+        $imagePath = "./img/" . $img['img'];
 
-      <!-- =======輪播區先關閉 start===== -->
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-1.jpg)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="intro-body">
-                    <p class="intro-title-top">Doral, Florida
-                      <br> 78345
-                    </p>
-                    <h1 class="intro-title mb-4 ">
-                      <span class="color-b">204 </span> Mount
-                      <br> Olive Road Two
-                    </h1>
-                    <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-2.jpg)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="intro-body">
-                    <p class="intro-title-top">Doral, Florida
-                      <br> 78345
-                    </p>
-                    <h1 class="intro-title mb-4">
-                      <span class="color-b">204 </span> Rino
-                      <br> Venda Road Five
-                    </h1>
-                    <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(assets/img/slide-3.jpg)">
-        <div class="overlay overlay-a"></div>
-        <div class="intro-content display-table">
-          <div class="table-cell">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8">
-                  <div class="intro-body">
-                    <p class="intro-title-top">Doral, Florida
-                      <br> 78345
-                    </p>
-                    <h1 class="intro-title mb-4">
-                      <span class="color-b">204 </span> Alira
-                      <br> Roan Road One
-                    </h1>
-                    <p class="intro-subtitle intro-price">
-                      <a href="#"><span class="price-a">rent | $ 12.000</span></a>
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- =======輪播區先關閉 end===== -->
+        // 生成帶有背景圖片的 div
+        echo '<div class="swiper-slide carousel-item-a intro-item bg-image" style="background-image: url(' . $imagePath . ');">';
+        echo '  <div class="overlay overlay-a"></div>';
+        echo '  <div class="intro-content display-table">';
+        echo '    <div class="table-cell">';
+        echo '      <div class="container">';
+        echo '        <div class="row">';
+        echo '          <div class="col-lg-8">';
+        echo '            <div class="intro-body">';
+        echo '            <h1 style="color:white;">Welcome<br>Leading Your Life</h1>';
+        echo '            </div>';
+        echo '          </div>';
+        echo '        </div>';
+        echo '      </div>';
+        echo '    </div>';
+        echo '  </div>';
+        echo '</div>';
+      }
+      ?>
     </div>
-    <div class="swiper-pagination"></div>
-  </div><!-- 輪播圖區 End Intro Section -->
+  <div class="swiper-pagination"></div>
 
   <main id="main">
 
@@ -977,7 +924,7 @@
         <div class="col-sm-12 col-md-4">
           <div class="widget-a">
             <div class="w-header-a">
-              <h3 class="w-title-a text-brand">好宅網</h3>
+              <h3 class="w-title-a text-brand">豪屋網</h3>
             </div>
             <div class="w-body-a">
               <p class="w-text-a color-text-a">
@@ -1073,7 +1020,7 @@
                 <a href="#">關於我們</a>
               </li>
               <li class="list-inline-item">
-                <a href="#">好宅</a>
+                <a href="#">豪屋</a>
               </li>
               <li class="list-inline-item">
                 <a href="#">部落格</a>
@@ -1110,7 +1057,7 @@
           <div class="copyright-footer">
             <p class="copyright color-text-a">
               &copy; Copyright
-              <span class="color-a">泰山好宅網</span> All Rights Reserved.
+              <span class="color-a">豪屋網</span> All Rights Reserved.
             </p>
           </div>
           <div class="credits">
