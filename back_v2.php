@@ -277,7 +277,57 @@ if (!isset($_SESSION['login'])) {  //如果你沒有登入，就會回到首頁
           <span>回首頁</span>
         </a>
       </li><!-- End Dashboard Nav -->
+      <!-- 自定義_開始 -->
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=title">
+          <i class="bi bi-file-earmark"></i>
+          <span>網站標題管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=ad">
+          <i class="bi bi-file-earmark"></i>
+          <span>動態文字廣告管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=mvim">
+          <i class="bi bi-file-earmark"></i>
+          <span>動畫圖片管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=image">
+          <i class="bi bi-file-earmark"></i>
+          <span>校園映象資料管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=total">
+          <i class="bi bi-file-earmark"></i>
+          <span>進站總人數管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=bottom">
+          <i class="bi bi-file-earmark"></i>
+          <span>頁尾版權資料管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=admin">
+          <i class="bi bi-file-earmark"></i>
+          <span>管理者帳號管理</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="?do=menu">
+          <i class="bi bi-file-earmark"></i>
+          <span>選單管理</span>
+        </a>
+      </li>
 
+      <!-- 自定義_結束 -->
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-menu-button-wide"></i><span>Components</span><i class="bi bi-chevron-down ms-auto"></i>
@@ -285,7 +335,7 @@ if (!isset($_SESSION['login'])) {  //如果你沒有登入，就會回到首頁
         <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="components-alerts.html">
-              <i class="bi bi-circle"></i><span>Alerts</span>
+            <i class="bi bi-menu-button-wide"></i><span>Components</span>
             </a>
           </li>
           <li>
@@ -506,13 +556,13 @@ if (!isset($_SESSION['login'])) {  //如果你沒有登入，就會回到首頁
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Dashboard</h1>
-      <nav>
+      <!-- <h1>Dashboard</h1> -->
+      <!-- <nav>
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="index.html">Home</a></li>
           <li class="breadcrumb-item active">Dashboard</li>
         </ol>
-      </nav>
+      </nav> -->
     </div><!-- End Page Title -->
 
     <section class="section dashboard">
@@ -558,7 +608,7 @@ if (!isset($_SESSION['login'])) {  //如果你沒有登入，就會回到首頁
   <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main_back.js"></script>
 
 </body>
 
